@@ -1,18 +1,15 @@
 import React from "react";
 
-const handleRestart = ({handleReset}) => {
-   
-    return(
-      <>  
-      
-     <div className="reset-button">
-    <button onClick={handleReset}> Play again </button>
-    
-    </div>
-    
-    
+const HandleRestart = (props) => {
+  const handleClick = () => {
+    props.restartGame()
+  }
+  return (
+    <>
+      <div>
+        <button onClick={handleClick}>Play again</button>
+      </div>
     </>
-
-    )
-}
-export default handleRestart
+  );
+};
+export default HandleRestart;

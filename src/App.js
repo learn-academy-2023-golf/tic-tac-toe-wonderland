@@ -7,12 +7,12 @@ const App = () => {
   const [player, setPlayer] = useState(0);
 
   const mark = (index) => {
-    if (player === 0) {
+    if (player === 0 && squares[index] === null) {
       let updatedGrid = [...squares];
       updatedGrid[index] = "❌";
       setSquares(updatedGrid);
       setPlayer(1);
-    } else if (player === 1) {
+    } else if (player === 1 && squares[index] === null) {
       let updatedGrid = [...squares];
       updatedGrid[index] = "⭕️";
       setSquares(updatedGrid);

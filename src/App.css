@@ -12,3 +12,25 @@
   font-size: 150px; 
   text-align: center;
 }
+
+.player1{
+  color: gray;
+ font-family: 'Times New Roman', Times, serif;
+ margin: auto;
+ font-size: 24px;
+}
+
+
+.player2{
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  font-size: 24px;
+}
+
+.noOne{
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  font-size: 24px;
+}

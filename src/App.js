@@ -101,6 +101,9 @@ const options2 = [
   return (
     <>
       <h1>Tic Tac Toe</h1>
+      <div className="menus"> <h4> Choose your marker: </h4> <ChooseMarker1 selectedOption1={selectedOption1} setSelectedOption1={setSelectedOption1} options1={options1} />
+       <h4> Choose your marker: </h4> <ChooseMarker2 selectedOption2={selectedOption2} setSelectedOption2={setSelectedOption2} options2={options2} />
+      </div>
       <p>Current Turn - Player {player}</p>
       <div className="grid">
         {squares.map((value, index) => {
@@ -113,9 +116,9 @@ const options2 = [
 
         {noOneWins && <div className="noOne">You both lose!</div>}
       </div>
+      <h5>
       <HandleRestart restartGame={restartGame} />
-      <ChooseMarker1 selectedOption1={selectedOption1} setSelectedOption1={setSelectedOption1} options1={options1} />
-      <ChooseMarker2 selectedOption2={selectedOption2} setSelectedOption2={setSelectedOption2} options2={options2} />
+      </h5>
     </>
   );
 };

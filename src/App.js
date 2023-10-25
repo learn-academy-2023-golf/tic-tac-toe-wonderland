@@ -11,6 +11,7 @@ const App = () => {
     updatedGrid[index] = "❌"
     setSquares(updatedGrid)
     
+
    }
   return(
   
